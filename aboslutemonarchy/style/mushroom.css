@@ -98,9 +98,19 @@ h3{
   }
 
   .mySlides2{
-    display: flexbox;
+    display: block;
     border-style: none;
   }
+
+  .card{
+    display:block;
+    border-style: none;
+    background: url("\images\Report 1.1.jpg");
+  }
+
+  .card:hover {
+    background: url("\images\ReportR1.jpg");
+}
 
   .leftbutton{
     border: none;
