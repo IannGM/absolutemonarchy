@@ -38,8 +38,8 @@
     <h3>Inspection Report on Busan Mushroom</h>
       <div id = 'trigger'>Redacted</div>
       <div class="slidershow2">
-          <img class="mySlides2" src="\images\Report 1.1.jpg" onmouseover="this.src = '\images\ReportR1.jpg'" style="width:100%">
-          <img class="mySlides2" src="\images\Report 1.2.jpg" style="width:100%">
+          <img class="mySlides2" src="\images\Report 1.1.jpg" onmouseover="newImg(this)" onmouseoutstyle="this.src = '\images\Report 1.1.jpg'"style="width:100%">
+          <img class="mySlides2" src="\images\Report 1.2.jpg" onmouseover="newImg2(this)" onmouseoutstyle="this.src = '\images\Report 1.2.jpg'" ="width:100%">
         
           <button class="leftbutton2" onclick="plusDivs2(-1)">&#10094;</button>
           <button class="rightbutton2" onclick="plusDivs2(1)">&#10095;</button>
@@ -82,6 +82,14 @@
       x[i].style.display = "none";  
     }
     x[slideIndex-1].style.display = "block";  
+  }
+
+  function newImg(x){
+    x.src = 'images\ReportR1.jpg';
+  }
+
+  function newImg2(x){
+    x.src = 'images\ReportR2.jpg';
   }
 </script>
 </html>
